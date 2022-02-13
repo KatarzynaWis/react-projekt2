@@ -1,0 +1,25 @@
+.background__circle-changing {
+  width: 90vw;
+  height: 90vw;
+  position: absolute;
+  top: 30px;
+  left: -90px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 12px;
+  overflow: hidden;
+  z-index: -10;
+}
+.background__circle-img-changing {
+  width: 90vw;
+  height: 90vw;
+}
+@media screen and (min-width: 768px) and (min-height: 581px) {
+  .background__circle-changing {
+    width: 690px;
+    height: 690px;
+  }
+  .background__circle-img-changing {
+    width: 690px;
+    height: 690px;
+  }
+}

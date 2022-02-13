@@ -1,0 +1,41 @@
+.background {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.main-box {
+  padding: 0 24px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 45px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(25px);
+}
+@media screen and (min-width: 768px) and (min-height: 581px) {
+  .background {
+    justify-content: center;
+    overflow-y: hidden;
+  }
+  .main-box {
+    margin: 24px;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .background {
+    height: 100vh;
+    justify-content: center;
+    overflow-y: hidden;
+  }
+  .main-box {
+    position: absolute;
+  }
+}

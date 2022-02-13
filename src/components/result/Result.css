@@ -1,0 +1,21 @@
+.main-box__result-wraper {
+  margin: 24px 0;
+}
+.main-box__result-from {
+  font-weight: bold;
+}
+.main-box__result-to {
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (min-width: 1200px) {
+  .main-box__result-wraper {
+    margin: 0 24px 24px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .main-box__unit-rates {
+    margin: 0 24px;
+  }
+}

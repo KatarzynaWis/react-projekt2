@@ -1,0 +1,25 @@
+.background__circle-poland {
+  width: 70vw;
+  height: 70vw;
+  position: absolute;
+  bottom: -30px;
+  right: -100px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 12px;
+  overflow: hidden;
+  z-index: -10;
+}
+.background__circle-img-pl {
+  width: 70vw;
+  height: 70vw;
+}
+@media screen and (min-width: 768px) and (min-height: 581px) {
+  .background__circle-poland {
+    width: 538px;
+    height: 538px;
+  }
+  .background__circle-img-pl {
+    width: 538px;
+    height: 538px;
+  }
+}

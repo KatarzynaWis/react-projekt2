@@ -1,0 +1,8 @@
+.main-box__form-select {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
