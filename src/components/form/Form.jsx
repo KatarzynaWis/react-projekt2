@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./Form.css";
 import InputAmount from "./input_amount/InputAmount";
 import SecelctCurrency from "./select_currency/SecelctCurrency";
-import inflectCurrencyName from "../../helpers/inflectCurrencyName ";
 import inflectPLN from "../../helpers/inflectPLN ";
 
 const Form = ({ liftingFormData }) => {
@@ -10,21 +9,18 @@ const Form = ({ liftingFormData }) => {
     "https://api.nbp.pl/api/exchangerates/tables/a/?format=json";
   const [rates, setRates] = useState([]);
   const [amount, setAmount] = useState("");
-  // czemu to nie działa?
-  // const rateUSD = rates.find(({ code }) => code === "USD")?.mid;
-  // console.log(rates.find(({ code }) => code === "USD")?.mid);
   const [rate, setRate] = useState();
   const [code, setCode] = useState("USD");
   const [name, setName] = useState("");
 
-  useEffect(() => {
+  useEffect(() => {  
     fetch(NBP_API_URL)
       .then((response) => response.json())
       .then((data) => {
         setRates(data[0].rates);
         setRate(data[0].rates[1].mid)
       })
-      .catch((error) => console.error(error));
+      .catch((error) => console.error(error))
   }, []);
 
   const handleInput = (amount) => setAmount(amount);
@@ -36,7 +32,7 @@ const Form = ({ liftingFormData }) => {
   const convertAmount = () => Number(amount) * rate;
   const handleSubmit = (e) => {
     e.preventDefault();
-    liftingFormData(amount, convertAmount(), rate, code, inflectCurrencyName(name, amount), inflectPLN(convertAmount()));
+    liftingFormData(amount, convertAmount(), rate, code, name, inflectPLN(convertAmount()))
     setAmount(() => "");
   };
  

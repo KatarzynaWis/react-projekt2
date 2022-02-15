@@ -1,7 +1,7 @@
 const inflectCurrencyName = (currencyName, amountValue) => {
   const lastChar = amountValue.substr(-1, 1);
 
-  if (currencyName.includes("dolar")) {
+  if (currencyName === "dolar" || currencyName.includes("dolar")) {
     switch (true) {
       case amountValue.includes("."):
         return "Dolara";

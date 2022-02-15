@@ -1,5 +1,5 @@
 import "./PolishFlag.css";
-import PLN from "../media/PLN.jpg";
+import PLN from "./media/PLN.jpg";
 
 const PolishFlag = () => {
   return(
