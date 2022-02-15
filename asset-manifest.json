@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-projekt2/static/css/main.2cce2f8a.css",
-    "main.js": "/react-projekt2/static/js/main.14521225.js",
+    "main.css": "/react-projekt2/static/css/main.ceb361eb.css",
+    "main.js": "/react-projekt2/static/js/main.ccff120c.js",
     "static/media/USD.jpg": "/react-projekt2/static/media/USD.bb556c9766bd07fc7f43.jpg",
     "static/media/GBP.jpg": "/react-projekt2/static/media/GBP.af8a31026390e934d9e1.jpg",
     "static/media/NZD.jpg": "/react-projekt2/static/media/NZD.f00b2b0c8310fcb977fd.jpg",
@@ -12,11 +12,11 @@
     "index.html": "/react-projekt2/index.html",
     "static/media/arrow-right-solid.svg": "/react-projekt2/static/media/arrow-right-solid.2db90993a0432805e2a3.svg",
     "static/media/arrow-down-solid.svg": "/react-projekt2/static/media/arrow-down-solid.c622c76ee3642707987e.svg",
-    "main.2cce2f8a.css.map": "/react-projekt2/static/css/main.2cce2f8a.css.map",
-    "main.14521225.js.map": "/react-projekt2/static/js/main.14521225.js.map"
+    "main.ceb361eb.css.map": "/react-projekt2/static/css/main.ceb361eb.css.map",
+    "main.ccff120c.js.map": "/react-projekt2/static/js/main.ccff120c.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cce2f8a.css",
-    "static/js/main.14521225.js"
+    "static/css/main.ceb361eb.css",
+    "static/js/main.ccff120c.js"
   ]
 }
